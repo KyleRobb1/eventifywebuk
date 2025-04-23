@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Eventify</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="dashboard-header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">Eventify</a></h1>
+            </div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for events...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="user-menu">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="user-dropdown">
+                    <div class="user-info">
+                        <img src="images/user-avatar.jpg" alt="User Avatar" class="user-avatar">
+                        <span class="user-name">John Doe</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="#"><i class="fas fa-ticket-alt"></i> My Tickets</a>
+                        <a href="#"><i class="fas fa-heart"></i> Saved Events</a>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>My Events</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>My Tickets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                            <span>Saved Events</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-history"></i>
+                            <span>Purchase History</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-divider"></li>
+                    <li>
+                        <a href="admin-panel.html">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Admin Panel</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help & Support</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="dashboard-welcome">
+                <h1>Welcome back, <span class="user-first-name">John</span>!</h1>
+                <p>Here's what's happening with your events</p>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Upcoming Events</h3>
+                        <p class="stat-value">3</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Saved Events</h3>
+                        <p class="stat-value">12</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Past Events</h3>
+                        <p class="stat-value">8</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Spent</h3>
+                        <p class="stat-value">$425.50</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Upcoming Events</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="upcoming-events">
+                    <div class="event-card horizontal">
+                        <div class="event-image">
+                            <img src="images/concert.jpg" alt="Summer Music Festival">
+                            <div class="event-date">
+                                <span class="day">25</span>
+                                <span class="month">May</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Summer Music Festival</h3>
+                            <div class="event-meta">
+                                <p><i class="fas fa-map-marker-alt"></i> Central Park, New York</p>
+                                <p><i class="fas fa-clock"></i> 7:00 PM</p>
+                            </div>
+                            <div class="ticket-info">
+                                <span class="ticket-type">General Admission</span>
+                                <span class="ticket-count">2 tickets</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="event-details.html" class="btn btn-secondary btn-sm">View Details</a>
+                                <a href="#" class="btn btn-primary btn-sm">View Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card horizontal">
+                        <div class="event-image">
+                            <img src="images/conference.jpg" alt="Tech Innovation Summit">
+                            <div class="event-date">
+                                <span class="day">10</span>
+                                <span class="month">Jun</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Tech Innovation Summit</h3>
+                            <div class="event-meta">
+                                <p><i class="fas fa-map-marker-alt"></i> Convention Center, San Francisco</p>
+                                <p><i class="fas fa-clock"></i> 9:00 AM</p>
+                            </div>
+                            <div class="ticket-info">
+                                <span class="ticket-type">VIP Pass</span>
+                                <span class="ticket-count">1 ticket</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="event-details.html" class="btn btn-secondary btn-sm">View Details</a>
+                                <a href="#" class="btn btn-primary btn-sm">View Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card horizontal">
+                        <div class="event-image">
+                            <img src="images/workshop.jpg" alt="Creative Art Workshop">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Jun</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Creative Art Workshop</h3>
+                            <div class="event-meta">
+                                <p><i class="fas fa-map-marker-alt"></i> Art Gallery, London</p>
+                                <p><i class="fas fa-clock"></i> 2:00 PM</p>
+                            </div>
+                            <div class="ticket-info">
+                                <span class="ticket-type">Workshop Pass</span>
+                                <span class="ticket-count">1 ticket</span>
+                            </div>
+                            <div class="event-actions">
+                                <a href="event-details.html" class="btn btn-secondary btn-sm">View Details</a>
+                                <a href="#" class="btn btn-primary btn-sm">View Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Recommended For You</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="recommended-events">
+                    <div class="events-grid">
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="images/food-festival.jpg" alt="Food Festival">
+                                <div class="event-date">
+                                    <span class="day">20</span>
+                                    <span class="month">Jun</span>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <h3>International Food Festival</h3>
+                                <div class="event-meta">
+                                    <p><i class="fas fa-map-marker-alt"></i> Waterfront Park, Chicago</p>
+                                    <p><i class="fas fa-clock"></i> 12:00 PM</p>
+                                </div>
+                                <p class="event-description">Taste delicious cuisines from around the world at this exciting food festival.</p>
+                                <div class="event-footer">
+                                    <span class="price">$25.00</span>
+                                    <button class="btn btn-primary">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="images/sports-event.jpg" alt="Sports Event">
+                                <div class="event-date">
+                                    <span class="day">05</span>
+                                    <span class="month">Jul</span>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <h3>Annual Marathon</h3>
+                                <div class="event-meta">
+                                    <p><i class="fas fa-map-marker-alt"></i> City Center, Boston</p>
+                                    <p><i class="fas fa-clock"></i> 8:00 AM</p>
+                                </div>
+                                <p class="event-description">Join thousands of runners in this exciting annual marathon through the city.</p>
+                                <div class="event-footer">
+                                    <span class="price">$40.00</span>
+                                    <button class="btn btn-primary">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="images/comedy-show.jpg" alt="Comedy Show">
+                                <div class="event-date">
+                                    <span class="day">12</span>
+                                    <span class="month">Jul</span>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <h3>Comedy Night</h3>
+                                <div class="event-meta">
+                                    <p><i class="fas fa-map-marker-alt"></i> Laugh Factory, Los Angeles</p>
+                                    <p><i class="fas fa-clock"></i> 8:30 PM</p>
+                                </div>
+                                <p class="event-description">Enjoy a night of laughter with top comedians performing live on stage.</p>
+                                <div class="event-footer">
+                                    <span class="price">$35.00</span>
+                                    <button class="btn btn-primary">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="images/music-concert.jpg" alt="Music Concert">
+                                <div class="event-date">
+                                    <span class="day">18</span>
+                                    <span class="month">Jul</span>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <h3>Rock Concert</h3>
+                                <div class="event-meta">
+                                    <p><i class="fas fa-map-marker-alt"></i> Stadium Arena, Miami</p>
+                                    <p><i class="fas fa-clock"></i> 7:30 PM</p>
+                                </div>
+                                <p class="event-description">Experience an electrifying night with the best rock bands performing live.</p>
+                                <div class="event-footer">
+                                    <span class="price">$75.00</span>
+                                    <button class="btn btn-primary">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Recent Activity</h2>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Ticket Purchased</h4>
+                            <p>You purchased 2 tickets for Summer Music Festival</p>
+                            <span class="activity-time">2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Event Saved</h4>
+                            <p>You saved International Food Festival to your favorites</p>
+                            <span class="activity-time">3 days ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Profile Updated</h4>
+                            <p>You updated your profile information</p>
+                            <span class="activity-time">1 week ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Ticket Purchased</h4>
+                            <p>You purchased 1 ticket for Tech Innovation Summit</p>
+                            <span class="activity-time">2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Eventify</h2>
+                    <p>Find and book amazing events near you</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Organizers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eventify. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="notification-panel">
+        <div class="notification-header">
+            <h3>Notifications</h3>
+            <button class="mark-all-read">Mark all as read</button>
+        </div>
+        <div class="notification-list">
+            <div class="notification-item unread">
+                <div class="notification-icon">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="notification-content">
+                    <p>Your tickets for <strong>Summer Music Festival</strong> are ready! Download them now.</p>
+                    <span class="notification-time">2 hours ago</span>
+                </div>
+                <button class="mark-read"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="notification-item unread">
+                <div class="notification-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="notification-content">
+                    <p><strong>Tech Innovation Summit</strong> is happening in 3 days. Don't forget!</p>
+                    <span class="notification-time">1 day ago</span>
+                </div>
+                <button class="mark-read"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="notification-item unread">
+                <div class="notification-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <div class="notification-content">
+                    <p>Special offer: Get 15% off on all music events this weekend!</p>
+                    <span class="notification-time">2 days ago</span>
+                </div>
+                <button class="mark-read"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="notification-item">
+                <div class="notification-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="notification-content">
+                    <p>An event you saved, <strong>Food Festival</strong>, has new tickets available.</p>
+                    <span class="notification-time">5 days ago</span>
+                </div>
+                <button class="mark-read"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="notification-footer">
+            <a href="#">View All Notifications</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify - Find and Book Amazing Events</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Eventify</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary">Sign In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Discover Amazing Events Near You</h1>
+                <p>Find and book tickets to the best concerts, festivals, workshops, and more.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for events...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/concert.jpg" alt="Music Concert">
+                        <div class="event-date">
+                            <span class="day">25</span>
+                            <span class="month">May</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Summer Music Festival</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Central Park, New York</p>
+                            <p><i class="fas fa-clock"></i> 7:00 PM</p>
+                        </div>
+                        <p class="event-description">Experience the ultimate summer music festival featuring top artists and bands.</p>
+                        <div class="event-footer">
+                            <span class="price">$59.99</span>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/conference.jpg" alt="Tech Conference">
+                        <div class="event-date">
+                            <span class="day">10</span>
+                            <span class="month">Jun</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Tech Innovation Summit</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Convention Center, San Francisco</p>
+                            <p><i class="fas fa-clock"></i> 9:00 AM</p>
+                        </div>
+                        <p class="event-description">Join industry leaders and innovators at this premier tech conference.</p>
+                        <div class="event-footer">
+                            <span class="price">$129.99</span>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/workshop.jpg" alt="Art Workshop">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Jun</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Creative Art Workshop</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Art Gallery, London</p>
+                            <p><i class="fas fa-clock"></i> 2:00 PM</p>
+                        </div>
+                        <p class="event-description">Learn new techniques and express your creativity in this hands-on workshop.</p>
+                        <div class="event-footer">
+                            <span class="price">$45.00</span>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/food-festival.jpg" alt="Food Festival">
+                        <div class="event-date">
+                            <span class="day">20</span>
+                            <span class="month">Jun</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h3>International Food Festival</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Waterfront Park, Chicago</p>
+                            <p><i class="fas fa-clock"></i> 12:00 PM</p>
+                        </div>
+                        <p class="event-description">Taste delicious cuisines from around the world at this exciting food festival.</p>
+                        <div class="event-footer">
+                            <span class="price">$25.00</span>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#events" class="btn btn-secondary">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music</h3>
+                    <p>Concerts, festivals, live performances</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <p>Conferences, workshops, hackathons</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Arts & Culture</h3>
+                    <p>Exhibitions, galleries, performances</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food & Drink</h3>
+                    <p>Tastings, festivals, cooking classes</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>Matches, tournaments, marathons</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Seminars, courses, workshops</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Find Events</h3>
+                    <p>Discover events that match your interests and location</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Book Tickets</h3>
+                    <p>Secure your spot with our easy booking system</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Attend & Enjoy</h3>
+                    <p>Get reminders and have a great experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Eventify made finding and booking tickets to my favorite band so easy! The interface is intuitive and user-friendly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/user1.jpg" alt="User 1">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Music Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As an event organizer, Eventify has helped me reach a wider audience and streamline the ticketing process. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/user2.jpg" alt="User 2">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Event Organizer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Eventify</h2>
+                <p>Subscribe to our newsletter to get the latest events and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Eventify</h2>
+                    <p>Find and book amazing events near you</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Organizers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eventify. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

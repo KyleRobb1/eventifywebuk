@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Eventify</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Admin Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <h2>Eventify</h2>
+                <p>Admin Panel</p>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#dashboard">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#events">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Events</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#users">
+                            <i class="fas fa-users"></i>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categories">
+                            <i class="fas fa-tags"></i>
+                            <span>Categories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#bookings">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Bookings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#reports">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#settings">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="admin-sidebar-footer">
+                <a href="index.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Website</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Header -->
+            <header class="admin-header">
+                <div class="header-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-actions">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">5</span>
+                    </div>
+                    <div class="admin-user">
+                        <img src="images/admin-avatar.jpg" alt="Admin">
+                        <div class="user-info">
+                            <h4>Admin User</h4>
+                            <p>Administrator</p>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="admin-section active">
+                <div class="section-header">
+                    <h2>Dashboard</h2>
+                    <p>Overview of your platform</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon blue">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Total Events</h3>
+                            <p class="stat-number">248</p>
+                            <p class="stat-change positive">+12% from last month</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon green">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Total Users</h3>
+                            <p class="stat-number">1,842</p>
+                            <p class="stat-change positive">+8% from last month</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon purple">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Tickets Sold</h3>
+                            <p class="stat-number">3,568</p>
+                            <p class="stat-change positive">+15% from last month</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon orange">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Revenue</h3>
+                            <p class="stat-number">$42,850</p>
+                            <p class="stat-change positive">+10% from last month</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Revenue Overview</h3>
+                            <div class="chart-actions">
+                                <select>
+                                    <option>Last 7 Days</option>
+                                    <option>Last 30 Days</option>
+                                    <option>Last 3 Months</option>
+                                    <option>Last Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="chart-placeholder">
+                            <!-- Chart would be rendered here with JavaScript -->
+                            <div class="chart-mock">
+                                <div class="bar" style="height: 30%"></div>
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 75%"></div>
+                                <div class="bar" style="height: 55%"></div>
+                                <div class="bar" style="height: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-activities">
+                        <div class="activities-header">
+                            <h3>Recent Activities</h3>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        <ul class="activity-list">
+                            <li>
+                                <div class="activity-icon green">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p><strong>New Event Created</strong>: Summer Music Festival</p>
+                                    <span>2 hours ago</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity-icon blue">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p><strong>New User Registered</strong>: Sarah Johnson</p>
+                                    <span>5 hours ago</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity-icon purple">
+                                    <i class="fas fa-ticket-alt"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p><strong>Ticket Purchased</strong>: Tech Innovation Summit (x3)</p>
+                                    <span>Yesterday</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity-icon orange">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p><strong>Event Updated</strong>: Creative Art Workshop</p>
+                                    <span>Yesterday</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity-icon red">
+                                    <i class="fas fa-trash"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p><strong>Event Deleted</strong>: Virtual Reality Experience</p>
+                                    <span>2 days ago</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div class="upcoming-events">
+                        <div class="table-header">
+                            <h3>Upcoming Events</h3>
+                            <a href="#events" class="view-all">View All Events</a>
+                        </div>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <th>Date</th>
+                                        <th>Location</th>
+                                        <th>Category</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Summer Music Festival</td>
+                                        <td>May 25, 2025</td>
+                                        <td>Central Park, New York</td>
+                                        <td>Music</td>
+                                        <td><span class="status published">Published</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                                <button class="action-btn"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tech Innovation Summit</td>
+                                        <td>Jun 10, 2025</td>
+                                        <td>Convention Center, San Francisco</td>
+                                        <td>Technology</td>
+                                        <td><span class="status published">Published</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                                <button class="action-btn"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Creative Art Workshop</td>
+                                        <td>Jun 15, 2025</td>
+                                        <td>Art Gallery, London</td>
+                                        <td>Arts & Culture</td>
+                                        <td><span class="status draft">Draft</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                                <button class="action-btn"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>International Food Festival</td>
+                                        <td>Jun 20, 2025</td>
+                                        <td>Waterfront Park, Chicago</td>
+                                        <td>Food & Drink</td>
+                                        <td><span class="status pending">Pending</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                                <button class="action-btn"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Annual Marathon</td>
+                                        <td>Jul 05, 2025</td>
+                                        <td>City Center, Boston</td>
+                                        <td>Sports</td>
+                                        <td><span class="status published">Published</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                                <button class="action-btn"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section id="events" class="admin-section">
+                <div class="section-header">
+                    <h2>Events Management</h2>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add New Event
+                    </button>
+                </div>
+
+                <div class="filter-bar">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search events...">
+                    </div>
+                    <div class="filters">
+                        <select>
+                            <option>All Categories</option>
+                            <option>Music</option>
+                            <option>Technology</option>
+                            <option>Arts & Culture</option>
+                            <option>Food & Drink</option>
+                            <option>Sports</option>
+                            <option>Education</option>
+                        </select>
+                        <select>
+                            <option>All Status</option>
+                            <option>Published</option>
+                            <option>Draft</option>
+                            <option>Pending</option>
+                            <option>Cancelled</option>
+                        </select>
+                        <select>
+                            <option>Sort By: Newest</option>
+                            <option>Sort By: Oldest</option>
+                            <option>Sort By: Name A-Z</option>
+                            <option>Sort By: Name Z-A</option>
+                            <option>Sort By: Price Low-High</option>
+                            <option>Sort By: Price High-Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="select-all">
+                                </th>
+                                <th>Event Name</th>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Events would be dynamically populated here -->
+                            <!-- Sample data for demonstration -->
+                            <tr>
+                                <td><input type="checkbox" class="select-item"></td>
+                                <td>Summer Music Festival</td>
+                                <td>May 25, 2025</td>
+                                <td>Central Park, New York</td>
+                                <td>Music</td>
+                                <td>$59.99</td>
+                                <td><span class="status published">Published</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                        <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- More events would be listed here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">10</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Event Form Modal -->
+    <div class="modal" id="event-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Event</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="event-form">
+                    <div class="form-group">
+                        <label for="event-name">Event Name</label>
+                        <input type="text" id="event-name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="event-date">Date</label>
+                            <input type="date" id="event-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-time">Time</label>
+                            <input type="time" id="event-time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-location">Location</label>
+                        <input type="text" id="event-location" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="event-category">Category</label>
+                            <select id="event-category" required>
+                                <option value="">Select Category</option>
+                                <option value="music">Music</option>
+                                <option value="technology">Technology</option>
+                                <option value="arts">Arts & Culture</option>
+                                <option value="food">Food & Drink</option>
+                                <option value="sports">Sports</option>
+                                <option value="education">Education</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-price">Price ($)</label>
+                            <input type="number" id="event-price" min="0" step="0.01" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-description">Description</label>
+                        <textarea id="event-description" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-image">Event Image</label>
+                        <input type="file" id="event-image" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-status">Status</label>
+                        <select id="event-status" required>
+                            <option value="published">Published</option>
+                            <option value="draft">Draft</option>
+                            <option value="pending">Pending Review</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancel-event">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save Event</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

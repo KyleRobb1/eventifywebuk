@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Eventify</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/event-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">Eventify</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#events" class="active">Events</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#about">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Sign In</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="event-details-page">
+        <div class="container">
+            <div class="event-header">
+                <div class="event-image-large">
+                    <img src="images/concert.jpg" alt="Summer Music Festival">
+                    <div class="event-date">
+                        <span class="day">25</span>
+                        <span class="month">May</span>
+                    </div>
+                </div>
+                <div class="event-header-content">
+                    <div class="event-category">Music</div>
+                    <h1>Summer Music Festival</h1>
+                    <div class="event-meta">
+                        <p><i class="fas fa-map-marker-alt"></i> Central Park, New York</p>
+                        <p><i class="fas fa-calendar-alt"></i> May 25, 2025</p>
+                        <p><i class="fas fa-clock"></i> 7:00 PM - 11:00 PM</p>
+                    </div>
+                    <div class="event-actions">
+                        <div class="event-price">
+                            <span class="price-label">Price:</span>
+                            <span class="price-amount">$59.99</span>
+                        </div>
+                        <div class="event-buttons">
+                            <button class="btn btn-primary" id="book-tickets-btn">Book Tickets</button>
+                            <button class="btn btn-secondary"><i class="far fa-heart"></i> Save</button>
+                            <button class="btn btn-secondary"><i class="fas fa-share-alt"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-content">
+                <div class="event-description-full">
+                    <h2>About This Event</h2>
+                    <p>Join us for an unforgettable night of music at the Summer Music Festival! This annual event brings together top artists and bands from around the world for a night of incredible performances under the stars.</p>
+                    
+                    <p>The Summer Music Festival is Central Park's premier music event, featuring multiple stages, food vendors, and interactive experiences. Whether you're a die-hard music fan or just looking for a fun night out, this festival has something for everyone.</p>
+                    
+                    <h3>Featured Artists</h3>
+                    <ul>
+                        <li>The Resonant Echo (Headliner)</li>
+                        <li>Electric Pulse</li>
+                        <li>Midnight Serenade</li>
+                        <li>Acoustic Harmony</li>
+                        <li>Urban Beats Collective</li>
+                    </ul>
+                    
+                    <h3>What to Expect</h3>
+                    <p>Gates open at 5:00 PM, with performances beginning at 7:00 PM. The event will feature:</p>
+                    <ul>
+                        <li>3 stages with continuous performances</li>
+                        <li>Food and beverage vendors</li>
+                        <li>Merchandise booths</li>
+                        <li>VIP lounge areas (for VIP ticket holders)</li>
+                        <li>Interactive art installations</li>
+                    </ul>
+                    
+                    <h3>Important Information</h3>
+                    <ul>
+                        <li>This is an all-ages event</li>
+                        <li>Outside food and drinks are not permitted</li>
+                        <li>Bring a valid ID for age verification if purchasing alcohol</li>
+                        <li>Limited seating available; feel free to bring blankets</li>
+                        <li>Event will proceed rain or shine</li>
+                    </ul>
+                </div>
+                
+                <div class="event-sidebar">
+                    <div class="organizer-info">
+                        <h3>Organizer</h3>
+                        <div class="organizer">
+                            <img src="images/organizer.jpg" alt="Event Organizer">
+                            <div>
+                                <h4>NYC Events Co.</h4>
+                                <p>Professional event organizer</p>
+                                <a href="#" class="organizer-link">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-location">
+                        <h3>Location</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Central Park, New York</p>
+                        <div class="map-container">
+                            <img src="images/map.jpg" alt="Event Location Map">
+                        </div>
+                        <a href="#" class="btn btn-secondary btn-small"><i class="fas fa-directions"></i> Get Directions</a>
+                    </div>
+                    
+                    <div class="similar-events">
+                        <h3>Similar Events</h3>
+                        <div class="similar-event">
+                            <img src="images/similar-event-1.jpg" alt="Jazz Night">
+                            <div>
+                                <h4>Jazz Night</h4>
+                                <p>Jun 10 • Downtown Jazz Club</p>
+                                <span class="price">$35</span>
+                            </div>
+                        </div>
+                        <div class="similar-event">
+                            <img src="images/similar-event-2.jpg" alt="Rock Concert">
+                            <div>
+                                <h4>Rock Concert</h4>
+                                <p>Jun 15 • Stadium Arena</p>
+                                <span class="price">$45</span>
+                            </div>
+                        </div>
+                        <a href="index.html#events" class="view-more-link">View More Events</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-modal" id="booking-modal">
+                <div class="booking-modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Book Tickets</h2>
+                    <form id="booking-form">
+                        <div class="ticket-selection">
+                            <h3>Select Tickets</h3>
+                            <div class="ticket-type">
+                                <div class="ticket-info">
+                                    <h4>General Admission</h4>
+                                    <p>Access to all general areas and performances</p>
+                                </div>
+                                <div class="ticket-price-qty">
+                                    <span class="ticket-price">$59.99</span>
+                                    <div class="quantity-selector">
+                                        <button type="button" class="qty-btn minus">-</button>
+                                        <input type="number" value="0" min="0" max="10" class="qty-input">
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-type">
+                                <div class="ticket-info">
+                                    <h4>VIP Experience</h4>
+                                    <p>Premium viewing areas, exclusive lounge access, complimentary drinks</p>
+                                </div>
+                                <div class="ticket-price-qty">
+                                    <span class="ticket-price">$149.99</span>
+                                    <div class="quantity-selector">
+                                        <button type="button" class="qty-btn minus">-</button>
+                                        <input type="number" value="0" min="0" max="10" class="qty-input">
+                                        <button type="button" class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="attendee-info">
+                            <h3>Attendee Information</h3>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-summary">
+                            <h3>Payment Summary</h3>
+                            <div class="summary-item">
+                                <span>General Admission (x<span class="ga-qty">0</span>)</span>
+                                <span class="ga-total">$0.00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>VIP Experience (x<span class="vip-qty">0</span>)</span>
+                                <span class="vip-total">$0.00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Booking Fee</span>
+                                <span class="booking-fee">$0.00</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>Total</span>
+                                <span class="total-amount">$0.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-method">
+                            <h3>Payment Method</h3>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="credit-card" checked>
+                                    <span class="payment-label">
+                                        <i class="far fa-credit-card"></i> Credit Card
+                                    </span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="paypal">
+                                    <span class="payment-label">
+                                        <i class="fab fa-paypal"></i> PayPal
+                                    </span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="apple-pay">
+                                    <span class="payment-label">
+                                        <i class="fab fa-apple-pay"></i> Apple Pay
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <div id="credit-card-details">
+                                <div class="form-group">
+                                    <label for="card-number">Card Number</label>
+                                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="expiry">Expiry Date</label>
+                                        <input type="text" id="expiry" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" placeholder="123">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-name">Name on Card</label>
+                                    <input type="text" id="card-name">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">Complete Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Eventify</h2>
+                    <p>Find and book amazing events near you</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Organizers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eventify. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/event-details.js"></script>
+</body>
+</html>
