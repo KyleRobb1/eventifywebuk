@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // API URL for backend
-    const API_URL = 'http://localhost:3001';
+    // API URL for backend - using relative path for deployment compatibility
+    const API_URL = '';
     
     // DOM Elements
     const adminSections = document.querySelectorAll('.admin-section');

@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(bodyParser.json());
 
+// Serve static files from the public directory (website files)
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Data storage path
 const dataPath = path.join(__dirname, 'data');
 const eventsFile = path.join(dataPath, 'events.json');
