@@ -17,7 +17,9 @@ package-lock.json
 /dist
 
 # Backend data files (for development only)
-/backend/data/
+/# Allow users.json for authentication
+!backend/data/users.json
+backend/data/*.json
 
 # macOS
 .DS_Store
