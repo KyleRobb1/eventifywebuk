@@ -50,3 +50,7 @@ pids
 "QikTix - The Smarter Way To Ticket"/
 Authentication/QikTix*
 QikTix*
+
+# Allow users.json for authentication
+!backend/data/users.json
+backend/data/*.json
